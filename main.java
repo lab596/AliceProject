@@ -31,7 +31,9 @@ public void myFirstMethod() {     
   doTogether( () -> {         
     this.camera.moveAndOrientTo( this.FollowingToBus1 );     
   }, () -> {         
-    this.teenPerson9.turn( TurnDirection.RIGHT, 0.5 );     } );     // Boy moves forward, camera goes to "FollowToBus2", and Boy says "Ok, thanks mom." at the same time     // Camera moves to FollowToBus3" while Boy continues to move forward     
+    this.teenPerson9.turn( TurnDirection.RIGHT, 0.5 );     } );     
+  // Boy moves forward, camera goes to "FollowToBus2", and Boy says "Ok, thanks mom." at the same time     
+  // Camera moves to FollowToBus3" while Boy continues to move forward     
   // Boy disappears into bus     
   this.BoyWalks2Bus();     
   // Bus drives away    
@@ -44,7 +46,9 @@ public void myFirstMethod() {     
   this.delay( 1.0 );     
   this.LaterAtSchool.move( MoveDirection.DOWN, 10.0 );
    // 10 Kids walk out together     
-  // Camera moves to "FollowingToCreamery1" and Boys walk to the street in a diamond pattern     // Camera moves to "FollowingToCreamery2" and Boys walk forward and are on the street     // Boys walk to the door and open it while a car drives by on the left side of the street towards the camera     
+  // Camera moves to "FollowingToCreamery1" and Boys walk to the street in a diamond pattern     
+  // Camera moves to "FollowingToCreamery2" and Boys walk forward and are on the street     
+  // Boys walk to the door and open it while a car drives by on the left side of the street towards the camera     
   doTogether( () -> {         
     this.teenPerson5.GoingDownStairs();     
   }, () -> {         
@@ -70,14 +74,17 @@ public void myFirstMethod() {     
   }, () -> {         
     this.playAudio( new AudioSource( Resources.bensound_thejazzpiano_wav, 0.25, 0.0, 10.0 ) );     
   } );     
-  // Boy 2 states, “Hey guys, I heard that the team we are playing against today is the hardest one yet.” and camera moves to "FacingBoy2"     // “Yeah, it gonna be a tough battle today, but as long as we play like we did last week we can win.” states Boy 1 and camera moves to "FacingBoy1"     // “I'm really nervous for this game guys, we actually have a chance of winning that trophy this year, I don't wanna blow it for you guys.” says Boy 3 and camera moves to "FacingBoy3"     
+  // Boy 2 states, “Hey guys, I heard that the team we are playing against today is the hardest one yet.” and camera moves to "FacingBoy2"     
+  // “Yeah, it gonna be a tough battle today, but as long as we play like we did last week we can win.” states Boy 1 and camera moves to "FacingBoy1"     
+  // “I'm really nervous for this game guys, we actually have a chance of winning that trophy this year, I don't wanna blow it for you guys.” says Boy 3 and camera moves to "FacingBoy3"     
   // “Hey man don’t worry. Just try your best.”says boy 4 and camera moves to "FacingBoy4"     
   // Camera moves to "FacingTable"     
   // Scene cuts using opasity     
   doTogether( () -> {         
     this.BoysTalkInCreamery();     
   }, () -> {         
-    this.playAudio( new AudioSource( Resources.bensound_thejazzpiano_wav, 0.25, 9.95, 39.0 ) );     } );     // Camera moves to "FacingTableGetUp" and all Boys get up and go to postitions to get up     
+    this.playAudio( new AudioSource( Resources.bensound_thejazzpiano_wav, 0.25, 9.95, 39.0 ) );     } );     
+  // Camera moves to "FacingTableGetUp" and all Boys get up and go to postitions to get up     
   // Scene uncuts using opasity     
   // “Wow that was good food, I’m ready to win this game now!” - Boy 3     
   // Boys move to door and camera moves to "FollowToDoor"     
@@ -90,7 +97,9 @@ public void myFirstMethod() {     
   // Boys walk forward and camera moves to "FollowToCreamery 2"     
   // Boys turn right and Camera moves to "FollowToSoccerField1"     
   // Boys walk forward and Camera moves to "FollowToSoccerField2"
-   // Boys walk forward and Camera moves to "FollowToSoccerField3"     // Boys 1 says "Hi coach, we are ready for the game today!", boys move forward and Camera moves to "FollowToSoccerField4"     // and Camera moves to "FollowToSoccerField5" and coach says "Okay guys, this is going to be a tough game good luck!"     
+   // Boys walk forward and Camera moves to "FollowToSoccerField3"     
+  // Boys 1 says "Hi coach, we are ready for the game today!", boys move forward and Camera moves to "FollowToSoccerField4"     
+  // and Camera moves to "FollowToSoccerField5" and coach says "Okay guys, this is going to be a tough game good luck!"     
   this.BoysWalkToSoccerField();     
   // Camera cuts using opacity     
   this.setFogDensity( 1.0 );     
@@ -117,7 +126,8 @@ public void myFirstMethod() {     
   }, () -> {         
     this.playAudio( new AudioSource( Resources.The_Fans___Ole_Ole_Ole___The_Name_Of_The_Game__1__wav, 0.5, 0.0, 11.0 ) );     
   } );     
-  // Camera moves to "EagleEyePosition2"     // Red Boy on right side turns around and runs forward then turns left goalie does kiking motion and ball moves right to boy right blue boy moves forward at same time     
+  // Camera moves to "EagleEyePosition2"     
+  // Red Boy on right side turns around and runs forward then turns left goalie does kiking motion and ball moves right to boy right blue boy moves forward at same time     
   doTogether( () -> {         
     this.GoaliePassesToBoyOnTheRight();     
   }, () -> {         
